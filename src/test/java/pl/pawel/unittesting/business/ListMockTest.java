@@ -2,6 +2,7 @@ package pl.pawel.unittesting.business;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.mockito.ArgumentCaptor;
 
 import java.util.List;
 
@@ -48,5 +49,16 @@ public class ListMockTest {
         verify(mock, atLeastOnce()).get(anyInt()); // verify that get() was called at least once
         verify(mock, atMost(2)).get(anyInt()); // verify that get() was called at most once
         verify(mock, never()).get(2); // verify that get() with argument '2' was never called
+    }
+
+    @Test
+    public void argumentCapturing() {
+        mock.add("SomeString");
+
+        // capturing parameter passed into 'add' method
+        ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        verify(mock).add(captor.capture());
+
+        assertEquals("SomeString", captor.getValue());
     }
 }
