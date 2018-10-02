@@ -1,7 +1,6 @@
 package pl.pawel.unittesting.business;
 
 import org.junit.Test;
-import pl.pawel.unittesting.data.SomeDataService;
 
 import static org.junit.Assert.*;
 
