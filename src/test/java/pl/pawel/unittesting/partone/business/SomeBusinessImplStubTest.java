@@ -1,7 +1,7 @@
-package pl.pawel.unittesting.business;
+package pl.pawel.unittesting.partone.business;
 
 import org.junit.Test;
-import pl.pawel.unittesting.data.SomeDataService;
+import pl.pawel.unittesting.partone.data.SomeDataService;
 
 import static org.junit.Assert.assertEquals;
 

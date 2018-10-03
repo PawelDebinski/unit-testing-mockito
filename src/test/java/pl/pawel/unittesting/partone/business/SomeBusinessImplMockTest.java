@@ -1,11 +1,11 @@
-package pl.pawel.unittesting.business;
+package pl.pawel.unittesting.partone.business;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import pl.pawel.unittesting.data.SomeDataService;
+import pl.pawel.unittesting.partone.data.SomeDataService;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;

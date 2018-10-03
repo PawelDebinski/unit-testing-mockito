@@ -1,6 +1,6 @@
-package pl.pawel.unittesting.business;
+package pl.pawel.unittesting.partone.business;
 
-import pl.pawel.unittesting.data.SomeDataService;
+import pl.pawel.unittesting.partone.data.SomeDataService;
 
 public class SomeBusinessImpl {
 

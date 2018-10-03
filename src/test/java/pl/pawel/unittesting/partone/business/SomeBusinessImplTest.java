@@ -1,4 +1,4 @@
-package pl.pawel.unittesting.business;
+package pl.pawel.unittesting.partone.business;
 
 import org.junit.Test;
 
