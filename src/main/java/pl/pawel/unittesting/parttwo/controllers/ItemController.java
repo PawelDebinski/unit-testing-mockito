@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.pawel.unittesting.parttwo.model.Item;
 import pl.pawel.unittesting.parttwo.service.ItemBusinessService;
 
+import java.util.List;
+
 @RestController
 public class ItemController {
 
@@ -23,5 +25,10 @@ public class ItemController {
         Item item = businessService.retrieveHardcodedItem();
 
         return item;
+    }
+
+    @GetMapping("/all-items-from-database")
+    public List<Item> retrieveAllItems() {
+        return businessService.retrieveAllItems();
     }
 }
