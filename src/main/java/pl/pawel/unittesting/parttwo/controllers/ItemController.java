@@ -19,6 +19,9 @@ public class ItemController {
 
     @GetMapping("/item-from-business-service")
     public Item itemFromBusinessService() {
-        return businessService.retrieveHardcodedItem();
+
+        Item item = businessService.retrieveHardcodedItem();
+
+        return item;
     }
 }
